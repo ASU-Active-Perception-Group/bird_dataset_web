@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="en" class="gr__visualqa_org"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>BIRD: Blocksworld Image Reasoning Dataset</title>
+    <link rel="stylesheet" href="./bird_files/foundation.css">
+    <link rel="stylesheet" href="./bird_files/main.css">
+    <script async="" src="./bird_files/analytics.js.download"></script><script src="./bird_files/jquery.js.download"></script>
+    <script src="./bird_files/jquery-2.1.3.min.js.download"></script>
+    <style>
+    /* For embedded YouTube videos */
+
+    .auto-resizable-iframe {
+        max-width: 640px;
+        margin: 0px auto;
+    }
+
+    .auto-resizable-iframe > div {
+        position: relative;
+        padding-bottom: 25%;
+        height: 0px;
+    }
+
+    @media screen and (max-width: 767px) {
+        #tot {
+            display: none;
+        }
+    }
+    </style>
+</head>
+
+<body class="off-canvas hide-extras" style="min-width:1200px; min-height:750px;" data-gr-c-s-loaded="true">
+    <header  style="background-color:white">
+        <div class="row">
+            <a href=""><img style="height: 100px; width: 170px; position:absolute; top:4px; left:0px;" src="./bird_files/main.png" alt="logo"></a>
+            <h1><img style="height: 110px;" src="./bird_files/asu.png" alt="logo"><br></h1>
+            <br>
+        </div>
+    </header>
+
+    <div class="contain-to-grid">
+        <nav class="top-bar" data-topbar="">
+            <ul class="title-area">
+                <li class="toggle-topbar menu-icon"><a href="https://visualqa.org/#"><span>Menu</span></a>
+                </li>
+            </ul>
+
+            <section class="top-bar-section">
+                <!-- Right Nav Section -->
+                <ul class="left">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="description.html">Descriptions</a></li>
+                    <li><a href="https://github.com/ASU-Active-Perception-Group/BIRD_Code">Code</a></li>
+                    <li><a href="https://drive.google.com/file/d/1tuwPCe5W3_hI2bWQoSjD15ZU2X0fROSo/view?usp=sharing">Download</a></li>
+                    </li>
+ 
+                    <li><a href="https://yezhouyang.engineering.asu.edu/">APG Groups</a></li>
+
+                </ul>
+            </section>
+        </nav>
+    </div>
+    <section role="main">
+
+         <div class="row">
+                <div class="large-12 columns">
+                    <h1 style="font-size:30px; color:grey; font-weight: 200;" align="left">Building blocks of BIRD dataset
+</h1>
+                    <p style="font-size:20px; font-weight: 200;" align="justify"> We used 6 wooden blocks, all being the different colors- Red (R), Green (G), Blue (B), Yellow(Y). Purple (P) and Orange (O) to construct the BIRD dataset. To limit the combinatorial expansion of possible cases, we assumed that an image can contain 5 blocks at maximum. We captured 7267 (6C0 + 6C1 + 6C2 + 6C3 + 6C4 + 6C5)* images consisting of all permutations of blocks, in the white background and uniform lighting conditions. Capturing the images manually, our idea was to create a realistic dataset rather than the rendered one, which will be further tested over natural images for evaluating generalization capability of AI systems. </p>
+
+                    <h1 style="font-size:30px; color:grey; font-weight: 200;" align="left">Ground truth annotation of Images</h1>
+                    <p style="font-size:20px; font-weight: 200;" align="justify"> 
+                    In order to observe the performance of a perception module in isolation, we needed the ground truth about blocks present in the particular image. For each image we captured, we named the image file such that it captures information about blocks present in the image. Set of blocks sharing the same vertical axis, we denote as a ‘tower’. All the towers are named in order from left to right. Whereas within the tower, blocks are recorded in bottom to top manner. Each tower is described as fixed width tokens of length 6, separated with other towers by ‘-‘ symbol. 0 denotes the absence of the blocks. 
+                    <br>
+                    For example,
+                        <img src="./bird_files/demo.jpg" height="240" width="240" style="display:block; margin:auto;" frameborder="0">
+
+                    <br>
+
+                    is renamed as 
+
+                    B00000-O00000-YGP000-000000-000000-000000-000000.jpg, depicting that the image contains 3 different towers in total. The first tower contains only blue (B) block, the second consisting of an orange (O) block. The last tower has 3 blocks - yellow (Y), green (G) and purple (P) stacked on top of each other from starting from the bottom.  
+
+                    We also used the image annotations for automatic generation of ground truth event sequences described in subsequent section. 
+                    </p>
+
+                    <br>
+                    
+
+                </div>
+                        </div>
+                        </div>
+                    </div>
+
+                </div>
+    </section>
+    <hr>
+<font size="1">
+        Copyright @ Tejas Gokhale 2019
+        Template from <a href="https://visualqa.org/">VQA Website</a>
+        <br>
+<!--           Last Updated: 
+          <script language="JavaScript">
+            document.write(document.lastModified);
+          </script>05/16/2019 22:50:37 -->
+	</font>
+
+
+</body></html>

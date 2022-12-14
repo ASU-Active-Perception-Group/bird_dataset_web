@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html lang="en" class="gr__visualqa_org">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>BIRD: Blocksworld Image Reasoning Dataset</title>
+    <link rel="stylesheet" href="./bird_files/foundation.css">
+    <link rel="stylesheet" href="./bird_files/main.css">
+    <script async="" src="./bird_files/analytics.js.download"></script>
+    <script src="./bird_files/jquery.js.download"></script>
+    <script src="./bird_files/jquery-2.1.3.min.js.download"></script>
+    <style>
+        /* For embedded YouTube videos */
+
+        .auto-resizable-iframe {
+            max-width: 640px;
+            margin: 0px auto;
+        }
+
+        .auto-resizable-iframe>div {
+            position: relative;
+            padding-bottom: 25%;
+            height: 0px;
+        }
+
+        @media screen and (max-width: 767px) {
+            #tot {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body class="off-canvas hide-extras" style="min-width:1200px; min-height:750px;" data-gr-c-s-loaded="true">
+    <header style="background-color:white">
+        <div class="row">
+            <a href=""><img style="height: 100px; width: 170px; position:absolute; top:4px; left:0px;" src="./bird_files/main.png" alt="logo"></a>
+            <h1><img style="height: 110px;" src="./bird_files/asu.png" alt="logo"><br></h1>
+            <br>
+        </div>
+    </header>
+
+    <div class="contain-to-grid">
+        <nav class="top-bar" data-topbar="">
+            <ul class="title-area">
+                <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+            </ul>
+
+            <section class="top-bar-section">
+                <!-- Right Nav Section -->
+                <ul class="left">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="description.html">Descriptions</a></li>
+                    <li><a href="https://github.com/ASU-Active-Perception-Group/BIRD_Code">Code</a></li>
+                    <li><a href="#">Download</a></li>
+                    <li><a href="#">ASU APG</a></li>
+                </ul>
+            </section>
+        </nav>
+    </div>
+    <section role="main">
+
+        <div class="row">
+            <div class="large-5 columns" style="padding-left: 1em;">
+                <div class="row">
+                    <h1 style="font-size:20px; color:grey; font-weight: 200;" align="left">What is IES?</h1>
+                </div>
+                <div class="row">
+                    <div class="large-11 columns" style="-webkit-text-size-adjust:none; -ms-text-size-adjust:none; -moz-text-size-adjust:none; text-size-adjust:none;">
+                        <p style="font-size:15px; font-weight: 200; display: inline;" align="justify">Given two images (source, target) each containing blocks arranged in some
+                            configuration, Image-based Event-Sequencing (IES) is a task to predict the sequence of actions required to rearrange objects in the source configuration
+                            to the target configuration.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="large-5 columns" style="padding-left: 1em;">
+                <div class="row">
+                    <h1 style="font-size:20px; color:grey; font-weight: 200;" align="left">What is BIRD?</h1>
+                </div>
+                <div class="row">
+                    <div class="large-11 columns" style="-webkit-text-size-adjust:none; -ms-text-size-adjust:none; -moz-text-size-adjust:none; text-size-adjust:none;">
+                        <p style="font-size:15px; font-weight: 200; display: inline;" align="justify">Blocksworld Image Reasoning Dataset (BIRD) is a testbed for IES task to
+                            combine learning and reasoning for the IES task. Prediction of event sequences requires understanding of spatial configuration of objects through vision
+                            followed by reasoning about this configuration with respect to a visual reasoning task such as IES. </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="large-7 columns">
+                <div class="row">
+                    <h1 style="font-size:20px; color:grey; font-weight: 200;" align="left">Dataset</h1>
+                </div>
+                <div class="large-12 columns">
+                    <ul style="font-size:13px; font-weight: 200; display: inline;" align="justify">
+                        <li>1 Million image pairs (available in raw image format and structured representation of images) in the Blocksworld setting </li>
+                    </ul>
+
+                    <ul style="font-size:13px; font-weight: 200; display: inline;" align="justify">
+                        <li>900 image pairs of natural images of indoor scenes</li>
+                    </ul>
+
+                    <ul style="font-size:13px; font-weight: 200; display: inline;" align="justify">
+                        <li>Ground truth event-sequence(s) for each image pair (“no sequence possible” for the given image pair is a valid case)</li>
+                    </ul>
+
+                    <ul style="font-size:13px; font-weight: 200; display: inline;" align="justify">
+                        <li>Evaluation scripts for testing inductive generalization capability of a method</li>
+                    </ul>
+                </div>
+
+                <div class="large-10 columns" style="margin-left:-10px">
+                    <p style="font-size:15px; font-weight: 200; display: inline;">Instructions for downloading the latest version of BIRD can be found <a href="#">here</a>.</p>
+                </div>
+                <div class="large-12 columns" style="-webkit-text-size-adjust:none; -ms-text-size-adjust:none; -moz-text-size-adjust:none; text-size-adjust:none;">
+                    <div class="large-5 columns">
+                    </div>
+                    <div class="large-4 columns" style="left: 40px;">
+                    </div>
+                </div>
+
+                <div class="large-4 columns" style="left: 40px;">
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <h1 style="font-size:30px; color:grey; font-weight: 200;" align="left">Papers</h1>
+
+            <p>
+            <ol>
+                <li>Blocksworld Revisited: Learning and Reasoning to Generate Event-Sequences from Image Pairs <a href="https://coindataflow.com/de/aktie/TOBAF"><img class="cdf" src="./bird_files/cdf.svg" alt="taat global alternatives aktie"></a></li>
+                </p>
+                <table width="1000">
+                    <tr>
+                        <td> <a href="https://arxiv.org/pdf/1905.12042.pdf"><img src="./bird_files/paper_snap.jpg" style="width:425px;height:220px"> </a> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td>
+                            <p align="justify"> Download the <a href="https://arxiv.org/pdf/1905.12042.pdf">paper</a></p>
+                            <p id="bibtex2" style="font-size:15px; font-weight: 200;" align="justify">
+                                <a href="https://arxiv.org/pdf/1905.12042.pdf"
+                                    onclick="document.getElementById(&#39;bibtex21&#39;).style.display=&#39;block&#39;; document.getElementById(&#39;bibtex2&#39;).style.display=&#39;none&#39;; return false;">BibTeX
+                                </a>
+                            </p>
+                            <div style="display: none;" id="bibtex21">
+                                <p style="font-size:12px; font-weight: 200; width:200%; text-align: justify;">
+                                    @misc{gokhale2019blocksworld,
+                                    <br>title={Blocksworld Revisited: Learning and Reasoning to Generate Event-Sequences from Image Pairs},
+                                    <br>author={Tejas Gokhale and Shailaja Sampat and Zhiyuan Fang and Yezhou Yang and Chitta Baral},
+                                    <br>year={2019},
+                                    <br>eprint={1905.12042},
+                                    <br>archivePrefix={arXiv},
+                                    <br>primaryClass={cs.CV}
+                                    }
+                                </p>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+
+                <p>
+                    <li>Cooking With Blocks: A Recipe for Visual Reasoning on Image Pairs, <i><a href="#">CVPR 2019 Vision Meets Cognition Workshop </a></i> </li>
+                </p>
+                <table width="1000">
+                    <tr>
+                        <td>
+                            <a href="https://arxiv.org/pdf/1905.12042.pdf"><img src="./bird_files/cvpr_snap.jpg" style="width:340px;height:110px"></a>
+                        </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td>
+                            <p align="justify">Download the <a href="#">paper</a></p>
+                            <p id="bibtex3" style="font-size:15px; font-weight: 200;" align="justify">
+                                <a href="#"
+                                    onclick="document.getElementById(&#39;bibtex31&#39;).style.display=&#39;block&#39;; document.getElementById(&#39;bibtex3&#39;).style.display=&#39;none&#39;; return false;">BibTeX</a>
+                            </p>
+                            <div style="display: none;" id="bibtex31">
+                                <p style="font-size:12px; font-weight: 200; width:200%; text-align: justify;">
+                                    @InProceedings{Gokhale_2019_CVPR_Workshops,
+                                    <br>author = {Gokhale, Tejas and Sampat, Shailaja and Fang, Zhiyuan and Yang, Yezhou and Baral, Chitta},
+                                    <br>title = {Cooking With Blocks : A Recipe for Visual Reasoning on Image-Pairs },
+                                    <br>booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
+                                    <br>month = {June},
+                                    <br>year = {2019}
+                                    }
+                                </p>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+        </div>
+
+        <hr>
+        <div class="row">
+            <div class="large-12 columns">
+                <h1 style="font-size:30px; color:grey; font-weight: 200;" align="left">Authors</h1>
+                <div class="instructor">
+                    <a href="https://www.public.asu.edu/~tgokhale/">
+                        <div class="instructorphoto"><img src="./bird_files/tejas.jpg"></div>
+                        <div>Tejas Gokhale</div>
+                    </a>
+                </div>
+
+                <div class="instructor">
+                    <a href="https://isearch.asu.edu/profile/3114848">
+                        <div class="instructorphoto"><img src="./bird_files/shailaja.jpg"></div>
+                        <div>Shailaja Sampat</div>
+                    </a>
+                </div>
+
+                <div class="instructor">
+                    <a href="https://www.public.asu.edu/~zfang29/">
+                        <div class="instructorphoto"><img src="./bird_files/jacob.jpg"></div>
+                        <div>Zhiyuan Fang</div>
+                    </a>
+                </div>
+
+                <div class="instructor">
+                    <a href="https://yezhouyang.engineering.asu.edu/">
+                        <div class="instructorphoto"><img src="./bird_files/yezhou.png"></div>
+                        <div>Yezhou Yang</div>
+                    </a>
+                </div>
+
+                <div class="instructor">
+                    <a href="http://www.public.asu.edu/~cbaral/">
+                        <div class="instructorphoto"><img src="./bird_files/chitta.jpg"></div>
+                        <div>Chitta Baral</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <br>
+            <p>Contact Tejas Gokhale for further information <a href="mailto:tgokhale@asu.edu" target="_top">tgokhale@asu.edu </a></p>
+        </div>
+    </section>
+    <hr>
+    <font size="2">
+        Copyright @ Tejas Gokhale 2019
+        Template from <a href="#">VQA Website</a>
+        <br>Last Updated:
+        <script language="JavaScript"> document.write(document.lastModified);</script>
+    </font>
+</body>
+
+</html>
